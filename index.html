@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div class="flex items-center justify-between mt-32 p-10 text-xl max-w-3xl mx-auto shadow-lg rounded-lg">
+        <input id="product-name" class="p-2 focus:outline-none border rounded" type="text" placeholder="Product">
+        <input id="product-quantity" class="p-2 focus:outline-none border rounded" type="text" placeholder="Quantity">
+        <button onclick="addProduct()" class="px-6 py-2 text-white bg-slate-500 rounded shadow-lg">Add Product</button>
+    </div>
+    <div class="flex items-center justify-between mt-10 p-10 text-xl max-w-3xl mx-auto shadow-lg rounded-lg">
+        <ul id="product-container"></ul>
+    </div>
+
+    <script src="./script/cart.js"></script>
+</body>
+
+</html>
